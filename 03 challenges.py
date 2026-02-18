@@ -36,7 +36,39 @@ def is_anagram(word_one, word_two):
         return False
    return sorted(word_one) == sorted(word_two)
    
-print(is_anagram("roma","ramo"))   
-            
- 
+print(is_anagram("roma","ramo")) 
 
+""""
+LA SUSECION DE FIBONACCI
+Escribe un programa que inmprima los primeros 50 numeros de la susecion 
+de fibonacci empezando por el 0.
+- La serie de fibonacci se compone por una sucesion de numeros en la que cada numero es la suma de los dos anteriores.
+1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+"""
+
+def fibonacci(): 
+    
+    prev=0
+    next=1   
+           
+    for index in range(0, 51):
+        print(index)
+        fib = prev + next
+        prev = next
+        next = fib
+         
+         
+fibonacci()        
+
+""""
+Crea un programa que invierta el orden de una cadena de texto
+sin usar funciones propias del lenguaje que lo hagan de forma automatica.
+- si le pasamos "hola mundo" nos debe devolver "odnum aloh"
+"""
+def reverse_string(string):
+    reversed_string = ""
+    for index in range(len(string)-1, -1, -1):
+        reversed_string += string[index]
+    return reversed_string
+
+print(reverse_string("hola mundo"))
