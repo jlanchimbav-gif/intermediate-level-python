@@ -1,0 +1,13 @@
+{
+    "name": "Jorge Alejandro",
+    "surname": "Lanchimba Vivas",
+    "edad": 26,
+    "idiomas": [
+        "ruso",
+        "ingles"
+    ],
+    "aprendiendo": [
+        "python",
+        "java"
+    ]
+}
